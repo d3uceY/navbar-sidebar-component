@@ -101,6 +101,11 @@ nav{
     transition: all 400ms ease-in-out;
 }
 
+.stroke:nth-child(2){
+    transition: translate 600ms  ease-in-out;
+}
+
+
 @media screen and (max-width: 682px){
 
     nav{
@@ -150,7 +155,8 @@ nav{
 
 
     .navbar-toggler.clicked > .stroke:nth-child(2){
-        display: none;
+        opacity: 0;
+        transform: rotate(-133deg);
     }
 
     .navbar-toggler.clicked > .stroke:nth-child(1){
